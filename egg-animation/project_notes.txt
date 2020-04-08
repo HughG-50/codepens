@@ -1,0 +1,59 @@
+border-radius
+    -has four values - top left corner, top right corner, bottom-left corner, bottom-right corner
+
+@keyframes
+    -CSS styles specified inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times
+    -animation must be binded to an element - e.g. div element
+
+    e.g. 
+    /* The animation code */
+    @keyframes example {
+        0%   {background-color: red;}
+        25%  {background-color: yellow;}
+        50%  {background-color: blue;}
+        100% {background-color: green;}
+    }
+
+    /* The element to apply the animation to */
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 4s;
+    }
+
+Animation - attributes
+    -animation-iteratoin-count 
+        -have animation run forever
+    -have animation run forever
+        animation-iteration-count: infinite;
+    -animation-duration 
+        set how long the animation runs forever
+    -animation-delay
+        delays start of animation
+        negative values make animation start as though it was N seconds in
+
+    normal - The animation is played as normal (forwards). This is default
+    reverse - The animation is played in reverse direction (backwards)
+    alternate - The animation is played forwards first, then backwards
+    alternate-reverse - The animation is played backwards first, then forwards
+
+    shorthand
+    animation: <name> <duration> <timing-function> <delay> <iteration-count> <direction>
+
+3D transform
+    -repositions an element in 3D space
+    -transform: translate3d(42px, -62px, -135px);
+
+Scale
+    -part of transform attribute
+    scale(<width> <height>)
+
+Transform-origin attribute
+    -allows you to change the position of transformed elements
+        -e.g. think of a long rectangle being rotated on its axis
+        https://www.w3schools.com/cssref/trycss3_transform-origin_inuse.htm
+    -important when 2D and 3D transforms warp the location of the element
+        transform-origin: <x-axis> <y-axis> <z-axis>
+    
